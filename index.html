@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="Style.css"> 
+        <link rel="icon" type="image/svg+xml" href="img/security.ico" /> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="encabezado">
+                <img class="Logo" src="./img/Logo.svg" alt="logo de Alura">
+            </div>
+        </header>
+        <main>
+            <div class="main">
+                <div class="datos">
+                    <textarea id="texto-encriptado" class="campo-texto" placeholder="Ingrese el texto aquí"></textarea>
+                    <div class="complementos-datos">
+                        <img src="./img/exclamation-circle-fill.svg" alt="signo exclamación">
+                        <span class="info-datos">Solo letras minúsculas y sin acentos</span>                           
+                        <div class="btn-datos">
+                            <button id="bottonEncrip" class="btn btnEncriptar">Encriptar</button>
+                            <button id="bottonDesencrip" class="btn btnDesencriptar">Desencriptar</button>
+                        </div>
+                    </div>    
+                </div>
+                <div id="campo-mensaje" class="mensaje">
+                    <img id="imagen-muñeco" class="muñeco" src="./img/Muñeco.png" alt="Ilustración">
+                    <textarea id="texto-info" class="texto-informativo" placeholder="Ningún mensaje fue encontrado"></textarea>
+                    <textarea id="instruc-usuario" class="instrucciones-usuario" placeholder="Ingresa el texto que deseas desencriptar o encriptar."></textarea>
+                    <button id="bottonCopy" class=" btn btnCopiar oculto">Copiar</button>
+                </div>                
+            </div>            
+        </main>
+        <footer class="piepagina">
+            <p class="texto-footer texto">Creado por Cristina González Challenge : Encriptador de texto.</p>
+            <p class="texto-footer fecha">Marzo 2024.</p>
+        </footer>
+        <script src="script.js"></script> 
+    </body>
+</html>
