@@ -116,10 +116,18 @@ body {
 
 .muñeco {
     width: 100%;
+    height: 30vh;
+    object-fit: contain;
+    align-items: center;
+    margin: 1.5em 0;
 }
 /* esta clase funciona para ocultar la imagen muñeco cuando la pantalla sea vista de dispositivos pequeños */
 .oculto {
     display: none;
+}
+
+.texto-informativo, .instrucciones-usuario{
+    overflow-y: auto;
 }
 /* corresponde al text area que mostrará ningún mensaje o el mensaje encriptado o desencriptado */
 .texto-informativo {
@@ -130,7 +138,8 @@ body {
     text-align: center;
     font-weight: bold;
     font-size: 24px;
-    color: var(--color-grisfuerte);    
+    color: var(--color-grisfuerte);
+    flex: 1;     
 }
 
 .texto-informativo::placeholder {
@@ -152,6 +161,7 @@ body {
     font-size: 16px;
     text-align: center;
     color: var(--color-grisbajo);
+    flex: 2;
 }
 
 .instrucciones-usuario::placeholder {
